@@ -2,27 +2,51 @@
 <html lang="mr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>माझा Quiz App</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz App</title>
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
-<div id="login" class="page"><div class="card">
-<h1>🧠 Quiz App</h1><p>तुमचे नाव टाका</p>
-<input id="name" placeholder="तुमचे नाव">
-<button onclick="startQuiz()">Quiz सुरू करा</button>
-</div></div>
+<div class="app">
 
-<div id="quiz" class="page hidden"><div class="card quiz">
-<div class="bar"><b>प्रश्न <span id="no">1</span>/10</b><b>⏱️ <span id="time">20</span>s</b></div>
-<h2 id="q"></h2><div id="answers"></div>
-<button id="next" class="next hidden" onclick="nextQ()">पुढचा प्रश्न ➜</button>
-</div></div>
+  <section id="startPage" class="card">
+    <div class="logo">🧠</div>
+    <h1>Quiz App</h1>
+    <p class="subtitle">तुमचे नाव टाका आणि Quiz सुरू करा</p>
+    <input id="playerName" type="text" placeholder="तुमचे नाव" maxlength="30">
+    <button id="startBtn" class="primary">Quiz सुरू करा</button>
+  </section>
 
-<div id="result" class="page hidden"><div class="card center">
-<div class="trophy">🏆</div><h1>Quiz पूर्ण!</h1>
-<p id="msg"></p><div id="score"></div>
-<button onclick="location.reload()">पुन्हा खेळा</button>
-</div></div>
-<script src="script.js"></script>
-</body></html>
+  <section id="quizPage" class="card hidden">
+    <div class="topbar">
+      <span id="questionCount">प्रश्न 1 / 20</span>
+      <span id="score">गुण: 0</span>
+    </div>
+
+    <div class="timer">
+      <div class="timer-label">⏱️ वेळ</div>
+      <div id="timer">15</div>
+    </div>
+
+    <div class="progress">
+      <div id="progressBar"></div>
+    </div>
+
+    <h2 id="question">प्रश्न येथे दिसेल</h2>
+    <div id="options" class="options"></div>
+    <p id="message" class="message"></p>
+  </section>
+
+  <section id="resultPage" class="card hidden">
+    <div class="trophy">🏆</div>
+    <h1>Quiz पूर्ण!</h1>
+    <p id="resultText"></p>
+    <div id="finalScore" class="final-score">0 / 20</div>
+    <p id="remark" class="remark"></p>
+    <button id="restartBtn" class="primary">पुन्हा खेळा</button>
+  </section>
+
+</div>
+<script src="script.js?v=3"></script>
+</body>
+</html>
