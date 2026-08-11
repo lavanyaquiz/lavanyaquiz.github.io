@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Win Color Demo</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loginPage">
+  <h2>Login</h2>
+
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+
+  <button id="loginBtn">Login</button>
+  <button id="registerBtn">Register</button>
+</div>
+
+<div id="gamePage" style="display:none;"><div class="header">
+<h1>WIN COLOR</h1>
+</div>
+
+<div class="wallet">
+<h2>Balance</h2>
+<h1>₹1000</h1>
+</div>
+
+<div class="timerBox">
+<h3>Time Remaining</h3>
+<div id="timer">00:30</div>
+</div>
+
+<div class="colors">
+<button class="green">Green</button>
+<button class="violet">Violet</button>
+<button class="red">Red</button>
+</div>
+
+<div class="numbers">
+<button>0</button>
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button>4</button>
+
+<button>5</button>
+<button>6</button>
+<button>7</button>
+<button>8</button>
+<button>9</button>
+</div>
+
+<div class="bigsmall">
+<button class="big">BIG</button>
+<button class="small">SMALL</button>
+</div>
+
+<h2>Game History</h2>
+
+<table>
+<tr>
+<th>Period</th>
+<th>Number</th>
+<th>Result</th>
+</tr>
+
+<tbody id="history">
+</tbody>
+
+</table>
+
+<script src="script.js"></script>
+
+</div>
+
+</body>
+</html>
