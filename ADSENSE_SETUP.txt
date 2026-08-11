@@ -1,0 +1,10 @@
+GOOGLE ADSENSE / ADMOB NOTES
+
+1. ही साइट web app आहे. GitHub Pages वर चालणाऱ्या वेबसाइटसाठी Google AdSense योग्य उत्पादन आहे.
+2. AdMob मुख्यतः Android/iOS apps साठी आहे. या HTML GitHub Pages साइटमध्ये AdMob SDK थेट वापरू नका.
+3. AdSense मंजुरी हमीने कोणीही देऊ शकत नाही. Google साइटचे content, policy compliance आणि ownership तपासते.
+4. तुमचा स्वतःचा AdSense Publisher ID मिळाल्यावरच index.html मध्ये Google ने दिलेला अधिकृत ad code वापरा.
+5. ads.txt मध्येही फक्त तुमच्या AdSense खात्याने दिलेली अचूक माहिती वापरा. बनावट Publisher ID वापरू नका.
+6. स्वतःच्या जाहिरातींवर क्लिक करू नका आणि इतरांना क्लिक करायला सांगू नका.
+7. Privacy Policy, Terms, About आणि Contact पेजमधील मजकूर तुमच्या वास्तविक माहितीप्रमाणे अपडेट करा.
+8. index.html मधील canonical URL मध्ये YOUR-GITHUB-USERNAME आणि YOUR-REPOSITORY बदला.
