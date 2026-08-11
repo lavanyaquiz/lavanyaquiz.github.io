@@ -130,3 +130,51 @@ button{
 button:hover{
   transform:scale(1.05);
 }
+
+/* LOGIN PAGE */
+#loginPage{
+  max-width:420px;
+  margin:60px auto;
+  padding:30px;
+  background:#ffffff;
+  border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.15);
+  text-align:center;
+}
+
+#loginPage h2{
+  margin-top:0;
+  margin-bottom:25px;
+  font-size:32px;
+  color:#222;
+}
+
+#loginPage input{
+  width:100%;
+  box-sizing:border-box;
+  padding:14px;
+  margin:8px 0;
+  border:1px solid #ccc;
+  border-radius:10px;
+  font-size:17px;
+  outline:none;
+}
+
+#loginPage input:focus{
+  border-color:#ff5b5b;
+}
+
+#loginPage button{
+  padding:13px 22px;
+  margin:12px 5px 0;
+  border:none;
+  border-radius:10px;
+  background:#ff5b5b;
+  color:white;
+  font-size:17px;
+  font-weight:bold;
+}
+
+#loginPage button:hover{
+  transform:scale(1.03);
+  }
